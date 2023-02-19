@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+  {% block title %}
+    Erick Cruz
+  {% endblock %}
+  </title>
+  
+
+  <!-- Custom Stylesheets -->
+
+  <link rel="stylesheet"  href="{% static 'bootstrap.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'propi.css' %}">
+  <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+
+
+</head>
+
+<body >
+  <!-- Navbar -->
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a  class="btn btn-outline-dark rounded-pill" href="#">Home</a>
+          <a  class="btn btn-outline-dark rounded-pill" href="#">About</a>
+          <a  class="btn btn-outline-dark rounded-pill" href="#">Contact</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  
+ 
+        
+  <!-- linea divisora    -->
+  <div>
+    <hr class="divider" style="border: none; border-bottom: 1px solid #d32929; margin-top: 20px; margin-bottom: 20px;">
+  </div>
+
+
+
+  
+
+  <div  class="col align-self-center">
+
+    {% block Contenido %}  
+    
+    
+    
+    {% endblock %}
+    
+  </div>
+
+  <div>
+    <hr class="divider" style="border: none; border-bottom: 1px solid #ddd; margin-top: 20px; margin-bottom: 20px;">
+  </div>
+
+
+
+  <div class="footer">
+    <!-------------------- Footer Area (Start) -------------------->
+    
+    <!-------------------- Footer Area (End) -------------------->
+  </div>
+
+  <div class="container text-center">
+    <div class="row align-items-end">
+      <div class="col"> 
+      </div>
+
+      <div class="col"> 
+    <footer class="mt-auto text-white-50">
+      <div class="social">
+        <a  href="#" class="fab fa-facebook-f"></a>
+        <a  href="#" class="fab fa-twitter"></a>
+        <a  href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin-in"></a>
+      </div>
+      
+      <div class="content">
+        <p>created by <span>Erick Cruz</span> | all rights reserved</p>
+      </div>
+    </footer>
+      </div>
+      <div class="col">
+      
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+</html>

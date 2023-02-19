@@ -1,0 +1,87 @@
+{% extends "base2.html" %}
+<html>
+    <head>
+        {% block title %}
+        {{ block.super }} | {{contact}}
+        {% endblock %}
+    </head>
+<body>
+
+    {% block section %}
+
+<!-------------------- Contact Area (Start) -------------------->
+    <section class="contact" id="contact">
+
+        <div class="heading">
+            <h2><span>contact</span> me</h2>
+        </div>
+
+        <div class="box-container">
+
+            <div class="contact-info">
+
+                <h3>get in touch</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    
+                <div class="info-item">
+                    <h4>Phone:</h4>
+                    <div class="detail">
+                        <div class="fas fa-phone"></div>
+                        <p>+123-456-789</p>
+                    </div>
+                    <div class="detail">
+                        <div class="fas fa-phone"></div>
+                        <p>+111-222-333</p>
+                    </div>
+                </div>
+    
+                <div class="info-item">
+                    <h4>email:</h4>
+                    <div class="detail">
+                        <div class="fas fa-envelope"></div>
+                        <p class="gmail">abc@gmail.com</p>
+                    </div>
+                    <div class="detail">
+                        <div class="fas fa-envelope"></div>
+                        <p class="gmail">xyz@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <h4>linkedin:</h4>
+                    <div class="detail">
+                        <div class="fab fa-linkedin"></div>
+                        <p class="linkedin">https://www.linkedin.com/</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <h4>github:</h4>
+                    <div class="detail">
+                        <div class="fab fa-github"></div>
+                        <p class="github">https://github.com/</p>
+                    </div>
+                </div>
+            </div>
+    
+            <form method="post" class="contact-form" id="contactUs-Form">
+                    
+                <input type="text" name="name" class="box" id="name" placeholder="name" required />
+                <input type="email" name="email" class="box" id="email" placeholder="email" required />
+                <input type="text" name="subject" class="box" id="subject" placeholder="subject" required />
+                <textarea cols="30" rows="10" name="comment" id="comment" class="box" placeholder="message"></textarea>
+                <button type="submit" class="btn" name="submit" id="submit">send message</button>
+                
+                <span class="alert" id="msg"></span>
+                
+            </form>
+            
+        </div>
+
+    </section>
+    <!-------------------- Contact Area (End) -------------------->
+    {% endblock %}
+
+</body>
+</html> 

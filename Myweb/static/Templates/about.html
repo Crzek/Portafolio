@@ -1,0 +1,122 @@
+{% extends "base2.html" %}
+
+
+<head>
+    <title>
+        {% block title %}
+        {{ block.super }} | {{about}}
+
+        {% endblock %}
+    </title>
+
+</head>
+
+<body>
+    
+    {% block section %}
+
+    <!-------------------- About Area (Start) -------------------->
+    <section class="about" id="about">
+
+        <div class="box-container">
+
+            <div class="image">
+                <img src="static/images/About/About-Image.png" alt="About-Image" />
+            </div>
+    
+            <div class="content">
+
+                <h2>My name is elora.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Recusandae aut adipisci necessitatibus veniam, provident 
+                    vero architecto praesentium, non sequi libero corrupti molestias. 
+                    Architecto voluptate eligendi maiores, error magni accusamus officia.</p>
+   
+                <div class="about-info">
+
+                    <div class="info">
+                        <h4>age: <span>23</span></h4>
+                        <h4>gender: <span>female</span></h4>
+                        <h4>language: <span>urdu, english</span></h4>
+                        <h4>work: <span>Front-End developer</span></h4>
+                        <h4>freelance: <span>available</span></h4>
+                        <a href="#" class="btn">download CV <i class="fas fa-download"></i></a>
+                    </div>
+
+                    <div class="counting">
+
+                        <div class="box">
+                            <h1 class="count" data-count="4">4+</h1>
+                            <h3>years of experience</h3>
+                        </div>
+                        
+                        <div class="box">
+                            <h1 class="count" data-count="100">100+</h1>
+                            <h3>projects completed</h3>
+                        </div>
+            
+                        <div class="box">
+                            <h1 class="count" data-count="80">80+</h1>
+                            <h3>happy clients</h3>
+                        </div>
+                                    
+                        <div class="box">
+                            <h1 class="count" data-count="20">20+</h1>
+                            <h3>awards won</h3>
+                        </div>
+                    
+                    </div>
+
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div class="skill-container">
+
+            <div class="heading">
+                <h2>my <span>skills</span></h2>
+            </div>
+    
+            <div class="skills">
+                <div class="skill-item item1">
+                    <div class="box">
+                        <h3>HTML5<span> 95% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>CSS3<span> 90% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>javascript<span> 85% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                </div>
+    
+                <div class="skill-item item2">
+                    <div class="box">
+                        <h3>JQuery<span> 75% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>Bootstrap<span> 65% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>PHP<span> 60% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+
+    </section>
+    <!-------------------- About Area (End) -------------------->
+
+    {% endblock %}
+</body>
+</html>

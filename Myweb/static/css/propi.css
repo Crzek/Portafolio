@@ -1,0 +1,45 @@
+/*
+ * Globals
+ */
+
+
+/* Linea Divisora */
+
+
+
+/* body */
+
+/* barra de navigacion */
+/* .navbar{
+  background-color: rgb(69, 60, 60);
+  margin: 10rem;
+  padding: 2rem;
+  border: 3px;
+
+}
+
+.btn{
+  color: rgb(159, 165, 224);
+  background-color: brown;
+  padding: 5rem;
+  margin: 10rem;
+} */
+
+.nav a {
+  color: aliceblue;
+  margin: 5rem;
+}
+
+header {
+  background-color: aqua;
+  
+}
+
+nav {
+  background-color: red;
+}
+
+.btn {
+  background-color: blueviolet;
+
+}
